@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added box-sizing to include padding and border in element's total width/height */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2.3fr 10fr;
+    grid-template-rows: 1080px;
+
+}
+
+.container div {
+    padding: 15px;
+
+}
+
+
+/* ---------Sidebar--------- */
+.sidebar {
+    text-align: start;
+    background-color: rgb(44, 151, 200);
+    color: white;
+
+}
+
+.side-panel {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+}
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.side-content a{
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.side-content a:hover{
+    color: black;
+    transition: 0.4s;
+
+}
+
+
+/* ---------main-header--------- */
+
+
+.main {
+
+    display: grid;
+    grid-template-rows: 1fr 5fr; /* Decreased the height of the header to make it smaller */
+
+}
+.header {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+/* ---------header-top--------- */
+
+
+
+.header-top {
+    display: grid;
+    grid-template-columns: 0.4fr 8fr 1.5fr 1fr 2fr;
+    gap: 10px;
+    align-items: center;
+}
+.header input{
+    height: 30px;
+    border-radius: 30px;
+    border: 1px;
+    background-color: rgb(227, 227, 227);
+    padding:15px;
+}
+.header-top img{
+    height: 30px;
+    width: 30px;
+    justify-self: center;
+    border-radius: 60px;
+}
+.header-top .bell{
+    justify-self: right;
+}
+
+.header-top #profile-btn{
+    justify-self: center;
+}
+.header-top a{
+    text-decoration: none;
+    color: black;
+    justify-self: stretch;
+}
+.header-top a:hover{
+    color: rgb(44, 151, 200);
+}
+
+/* ---------header-bot--------- */
+
+
+.header-bot {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+    gap: 20px; /* Increased the gap between header elements */
+    align-items: center;
+
+}
+.header-bot img{
+    height: 60px;
+    width: 60px;
+    justify-self: end;
+    border-radius: 50%;
+
+}
+.header-bot button{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid  rgb(44, 151, 200);;
+    background-color: rgb(44, 151, 200);
+    color: white;
+    cursor: pointer;
+}
+.header-bot button:hover{
+    color:  rgb(44, 151, 200);
+    background-color: white;
+    transition: 0.4s;
+}
+.header-bot #hello-p{
+    font-size: 12px;
+}
+.header-bot #userName-p{
+    font-size: 18px;
+}
+
+
+/* ---------main--------- */
+.main-content {
+    background-color: rgb(227, 227, 227);
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap: 20px; /* Increased the gap between main content elements */
+    grid-template-rows: 1fr;
+}
+
+.main-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    overflow: auto;
+
+}
+.card .title{
+    font-weight: bold;
+}
+.card .icons{
+    justify-self: right;
+    gap: 5px;
+}
+
+.anno-trend {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
